@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ 
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="co.pragma.www.plugin.morpho"
+        version="1.0.0">
+    <name>Morpho</name>
+    <description>Plugin for use Morpho SDK</description>
+    <license>PRAGMA</license>
+    <keywords>pragma, morpho</keywords>
+    
+ 
+    <!-- android -->
+    <platform name="android">
+        
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="Morpho">
+                <param name="android-package" value="co.pragma.www.plugin.morpho.Morpho"/>				
+            </feature>
+        </config-file>
+    	<source-file src="src/android/Morpho.java" target-dir="src/co/pragma/www/plugin/morpho" />
+        <source-file src="src/android/AuthenticationActivity.java" target-dir="src/co/pragma/www/plugin/morpho" />
+        <source-file src="src/android/BaseActivity.java" target-dir="src/co/pragma/www/plugin/morpho" />
+        <source-file src="src/android/R.java" target-dir="src/co/pragma/www/plugin/morpho" />
+        <js-module src="www/Morpho.js" name="Morpho">
+            <clobbers target="Morpho" />
+        </js-module>
+    </platform>
+</plugin>

@@ -1,0 +1,15 @@
+{
+    "version": "1.0.0",
+    "name": "co.pragma.www.plugin.morpho",
+    "cordova_name": "Morpho",
+    "description": "Plugin for use Morpho SDK",
+    "license": "PRAGMA",
+    "keywords": [
+        "pragma",
+        "morpho"
+    ],
+    "platforms": [
+        "android"
+    ],
+    "engines": []
+}
