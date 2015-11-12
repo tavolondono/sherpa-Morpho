@@ -4,8 +4,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 
+import com.ionicframework.sherpaenroll532309.R;
+
 import morpho.etis.android.sdk.account.IAccount_Data;
-import co.pragma.www.plugin.morpho.R;
+//import morpho.etis.android.sdk.example.R;
+//import co.pragma.www.plugin.morpho.R;
 import morpho.etis.android.sdk.ui.common.IDATA_PARAMETERS;
 
 /**

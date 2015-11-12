@@ -21,9 +21,35 @@
     	<source-file src="src/android/Morpho.java" target-dir="src/co/pragma/www/plugin/morpho" />
         <source-file src="src/android/AuthenticationActivity.java" target-dir="src/co/pragma/www/plugin/morpho" />
         <source-file src="src/android/BaseActivity.java" target-dir="src/co/pragma/www/plugin/morpho" />
-        <source-file src="src/android/R.java" target-dir="src/co/pragma/www/plugin/morpho" />
+        <source-file src="src/android/RegistrationActivity.java" target-dir="src/co/pragma/www/plugin/morpho" />
+		
         <js-module src="www/Morpho.js" name="Morpho">
             <clobbers target="Morpho" />
         </js-module>
+		
+		<config-file target="AndroidManifest.xml" parent="/*">
+            <uses-permission android:name="android.permission.INTERNET" />
+			<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+			<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+			<uses-permission android:name="android.permission.CAMERA" />
+			<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+			<uses-permission android:name="android.permission.GET_ACCOUNTS" />
+			<uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+			<uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+			<uses-permission android:name="android.permission.USE_CREDENTIALS" />
+			<uses-permission android:name="android.permission.INTERNET" />
+			<uses-permission android:name="android.permission.RECORD_AUDIO" />
+			<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+			<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+			<uses-permission android:name="android.permission.VIBRATE" />
+			<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+			<uses-permission android:name="android.permission.WAKE_LOCK" />
+			<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+			<uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+			
+		</config-file>
+		<config-file target="AndroidManifest.xml" parent="application">            
+			<activity android:label="@string/title_activity_my_app" android:name="co.pragma.www.plugin.morpho.RegistrationActivity" />
+        </config-file>
     </platform>
 </plugin>
